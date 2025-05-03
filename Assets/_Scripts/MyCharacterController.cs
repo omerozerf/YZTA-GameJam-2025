@@ -54,7 +54,7 @@ public class MyCharacterController : MonoBehaviour
     public void Move(Vector2 input)
     {
         var velocity = new Vector2(input.x * m_DirectionMultiplier, 0f) * _moveSpeed;
-        m_Rigidbody.velocity = new Vector2(velocity.x, m_Rigidbody.velocity.y);
+        m_Rigidbody.linearVelocity = new Vector2(velocity.x, m_Rigidbody.linearVelocity.y);
     }
 
     public void ChangeColor(CharacterColorType newColorType)
@@ -71,5 +71,10 @@ public class MyCharacterController : MonoBehaviour
             Debug.Log("Jump");
             m_Rigidbody.AddForce(Vector2.up * _jumpForce, ForceMode2D.Impulse);
         }
+    }
+
+    public CharacterColorType GetColorType()
+    {
+        return _characterColorType;
     }
 }
