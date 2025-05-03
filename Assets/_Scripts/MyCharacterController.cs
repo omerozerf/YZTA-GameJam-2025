@@ -40,6 +40,13 @@ public class MyCharacterController : MonoBehaviour
         {
             TryJump();
         }
+
+        // Add rotation effect only when airborne and moving horizontally
+        if (!m_IsGrounded && Mathf.Abs(m_Rigidbody.velocity.x) > 0.1f)
+        {
+            float direction = Mathf.Sign(m_Rigidbody.velocity.x);
+            transform.Rotate(Vector3.forward * -600f * direction * Time.deltaTime);
+        }
     }
 
     private void FixedUpdate()
@@ -50,6 +57,7 @@ public class MyCharacterController : MonoBehaviour
         if (!m_WasGrounded && m_IsGrounded)
         {
             transform.DOPunchScale(new Vector3(0.2f, -0.1f, 0), 0.2f, 10, 1);
+            transform.rotation = Quaternion.identity;
         }
     }
 
@@ -64,6 +72,15 @@ public class MyCharacterController : MonoBehaviour
     {
         var velocity = new Vector2(input.x * m_DirectionMultiplier, 0f) * _moveSpeed;
         m_Rigidbody.linearVelocity = new Vector2(velocity.x, m_Rigidbody.linearVelocity.y);
+
+        if (velocity.x > 0)
+        {
+            transform.localScale = new Vector3(1f, transform.localScale.y, transform.localScale.z);
+        }
+        else if (velocity.x < 0)
+        {
+            transform.localScale = new Vector3(-1f, transform.localScale.y, transform.localScale.z);
+        }
     }
 
     public void ChangeColor(CharacterColorType newColorType)
