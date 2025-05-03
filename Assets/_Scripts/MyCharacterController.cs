@@ -31,8 +31,8 @@ public class MyCharacterController : MonoBehaviour
 
     private void Update()
     {
-        float inputX = Input.GetAxisRaw("Horizontal");
-        Vector2 input = new Vector2(inputX, 0f);
+        var inputX = Input.GetAxisRaw("Horizontal");
+        var input = new Vector2(inputX, 0f);
         
         Move(input);
 
@@ -41,11 +41,11 @@ public class MyCharacterController : MonoBehaviour
             TryJump();
         }
 
-        // Add rotation effect only when airborne and moving horizontally
-        if (!m_IsGrounded && Mathf.Abs(m_Rigidbody.velocity.x) > 0.1f)
+
+        if (!m_IsGrounded && Mathf.Abs(m_Rigidbody.linearVelocity.x) > 0.1f)
         {
-            float direction = Mathf.Sign(m_Rigidbody.velocity.x);
-            transform.Rotate(Vector3.forward * -600f * direction * Time.deltaTime);
+            var direction = Mathf.Sign(m_Rigidbody.linearVelocity.x);
+            transform.Rotate(Vector3.forward * (-600f * direction * Time.deltaTime));
         }
     }
 
@@ -88,9 +88,11 @@ public class MyCharacterController : MonoBehaviour
         _characterColorType = newColorType;
         m_DirectionMultiplier = (_characterColorType == CharacterColorType.Blue) ? 1 : -1;
 
-        Color targetColor = (_characterColorType == CharacterColorType.Blue) ? Color.blue : Color.red;
+        var targetColor = (_characterColorType == CharacterColorType.Blue) ? Color.blue : Color.red;
         m_SpriteRenderer.DOColor(targetColor, 0.25f);
 
+        transform.DOKill();
+        transform.localScale = new Vector3(Mathf.Sign(transform.localScale.x), 1f, 1f);
         transform.DOPunchScale(Vector3.one * 0.2f, 0.2f, 8, 1);
     }
     
