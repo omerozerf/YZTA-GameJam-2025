@@ -10,6 +10,7 @@ public class MyCharacterController : MonoBehaviour
     [SerializeField] private float _jumpForce;
     [SerializeField] private LayerMask _groundLayer;
     [SerializeField] private Transform _groundCheckPoint;
+    [SerializeField] private Transform _spawnPoint;
     
     private Rigidbody2D m_Rigidbody;
     private SpriteRenderer m_SpriteRenderer;
@@ -68,7 +69,6 @@ public class MyCharacterController : MonoBehaviour
     {
         if (m_IsGrounded)
         {
-            Debug.Log("Jump");
             m_Rigidbody.AddForce(Vector2.up * _jumpForce, ForceMode2D.Impulse);
         }
     }
@@ -76,5 +76,11 @@ public class MyCharacterController : MonoBehaviour
     public CharacterColorType GetColorType()
     {
         return _characterColorType;
+    }
+
+    public void Die()
+    {
+        m_Rigidbody.linearVelocity = Vector2.zero;
+        transform.position = _spawnPoint.position;
     }
 }
