@@ -56,6 +56,8 @@ public class MyCharacterController : MonoBehaviour
 
         if (!m_WasGrounded && m_IsGrounded)
         {
+            transform.DOKill();
+            transform.localScale = new Vector3(Mathf.Sign(transform.localScale.x), 1f, 1f);
             transform.DOPunchScale(new Vector3(0.2f, -0.1f, 0), 0.2f, 10, 1);
             transform.rotation = Quaternion.identity;
         }
