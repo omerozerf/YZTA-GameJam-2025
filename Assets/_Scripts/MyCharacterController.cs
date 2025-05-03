@@ -1,6 +1,7 @@
 using System;
 using UnityEngine;
 using UnityEngine.Serialization;
+using DG.Tweening;
 
 [RequireComponent(typeof(Rigidbody2D))]
 public class MyCharacterController : MonoBehaviour
@@ -17,6 +18,7 @@ public class MyCharacterController : MonoBehaviour
     private int m_DirectionMultiplier;
     
     private bool m_IsGrounded;
+    private bool m_WasGrounded;
 
     
     private void Awake()
@@ -42,7 +44,13 @@ public class MyCharacterController : MonoBehaviour
 
     private void FixedUpdate()
     {
+        m_WasGrounded = m_IsGrounded;
         m_IsGrounded = Physics2D.OverlapCircle(_groundCheckPoint.position, 0.1f, _groundLayer);
+
+        if (!m_WasGrounded && m_IsGrounded)
+        {
+            transform.DOPunchScale(new Vector3(0.2f, -0.1f, 0), 0.2f, 10, 1);
+        }
     }
 
     private void OnDrawGizmos()
@@ -62,7 +70,11 @@ public class MyCharacterController : MonoBehaviour
     {
         _characterColorType = newColorType;
         m_DirectionMultiplier = (_characterColorType == CharacterColorType.Blue) ? 1 : -1;
-        m_SpriteRenderer.color = (_characterColorType == CharacterColorType.Blue) ? Color.blue : Color.red;
+
+        Color targetColor = (_characterColorType == CharacterColorType.Blue) ? Color.blue : Color.red;
+        m_SpriteRenderer.DOColor(targetColor, 0.25f);
+
+        transform.DOPunchScale(Vector3.one * 0.2f, 0.2f, 8, 1);
     }
     
     public void TryJump()
@@ -70,6 +82,7 @@ public class MyCharacterController : MonoBehaviour
         if (m_IsGrounded)
         {
             m_Rigidbody.AddForce(Vector2.up * _jumpForce, ForceMode2D.Impulse);
+            transform.DOScaleY(1.2f, 0.1f).SetLoops(2, LoopType.Yoyo);
         }
     }
 
