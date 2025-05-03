@@ -132,7 +132,7 @@ CapsuleCollider2D:
   m_Enabled: 1
   serializedVersion: 3
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 595242f2b4642447894a76f5fb21bf82, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -174,7 +174,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDamping: 0
   m_AngularDamping: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 10
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -198,10 +198,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cd5166053504a4e888c44c2ad65cc144, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _moveSpeed: 5
+  _moveSpeed: 10
   _characterColorType: 0
-  _jumpForce: 5
+  _jumpForce: 30
   _groundLayer:
     serializedVersion: 2
     m_Bits: 64
   _groundCheckPoint: {fileID: 1781406359254813142}
+  _spawnPoint: {fileID: 0}
