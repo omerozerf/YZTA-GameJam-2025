@@ -51,7 +51,7 @@ namespace _Scripts
         private void LevelComplete()
         {
             Debug.Log("Level Completed!");
-            // TODO: call LevelManager.Instance.LevelComplete() or similar
+            LevelManager.LoadNextLevel();
         }
     }
 }
