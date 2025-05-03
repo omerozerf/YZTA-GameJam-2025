@@ -1,7 +1,9 @@
+using System;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using Cysharp.Threading.Tasks;
 using DG.Tweening;
+using TMPro;
 
 namespace _Scripts
 {
@@ -12,6 +14,7 @@ namespace _Scripts
         [SerializeField] private CanvasGroup transitionCanvasGroup;
         [SerializeField] private RectTransform transitionImage;
         [SerializeField] private float transitionDuration = 0.5f;
+        [SerializeField] private TMP_Text levelNameText;
 
         private void Awake()
         {
@@ -25,6 +28,14 @@ namespace _Scripts
             DontDestroyOnLoad(gameObject);
         }
 
+        private void Start()
+        {
+            if (levelNameText != null)
+            {
+                levelNameText.text = SceneManager.GetActiveScene().name.ToUpperInvariant();
+            }
+        }
+
         private async UniTask PlaySceneTransition(int sceneIndex)
         {
             transitionCanvasGroup.alpha = 1;
@@ -34,9 +45,15 @@ namespace _Scripts
             await transitionImage.DOScale(Vector3.one, transitionDuration).SetEase(Ease.InQuad).AsyncWaitForCompletion();
 
             await SceneManager.LoadSceneAsync(sceneIndex);
+            
+            if (levelNameText != null)
+            {
+                levelNameText.text = SceneManager.GetActiveScene().name.ToUpperInvariant();
+            }
 
             transitionImage.localScale = Vector3.one;
             await transitionImage.DOScale(Vector3.zero, transitionDuration).SetEase(Ease.OutQuad).AsyncWaitForCompletion();
+            
 
             transitionCanvasGroup.alpha = 0;
             transitionCanvasGroup.blocksRaycasts = false;
