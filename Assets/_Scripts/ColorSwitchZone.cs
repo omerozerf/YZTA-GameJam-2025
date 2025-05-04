@@ -7,6 +7,9 @@ namespace _Scripts
     public class ColorSwitchZone : MonoBehaviour
     {
         [SerializeField] private SwitchModeType _modeType = SwitchModeType.Toggle;
+        [SerializeField] private Color _colorBlue;
+        [SerializeField] private Color _colorRed;
+        [SerializeField] private Color _mixColor;
         
         private SpriteRenderer m_SpriteRenderer;
 
@@ -18,9 +21,9 @@ namespace _Scripts
 
             var baseColor = _modeType switch
             {
-                SwitchModeType.Toggle => new Color(1f, 0f, 1f),
-                SwitchModeType.ForceBlue => Color.blue,
-                SwitchModeType.ForceRed => Color.red,
+                SwitchModeType.Toggle => _mixColor,
+                SwitchModeType.ForceBlue => _colorBlue,
+                SwitchModeType.ForceRed => _colorRed,
                 _ => Color.white
             };
 

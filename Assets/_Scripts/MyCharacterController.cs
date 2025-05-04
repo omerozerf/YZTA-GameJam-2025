@@ -12,6 +12,8 @@ public class MyCharacterController : MonoBehaviour
     [SerializeField] private LayerMask _groundLayer;
     [SerializeField] private Transform _groundCheckPoint;
     [SerializeField] private Transform _spawnPoint;
+    [SerializeField] private Sprite _blueSprite;
+    [SerializeField] private Sprite _redSprite;
     
     private Rigidbody2D m_Rigidbody;
     private SpriteRenderer m_SpriteRenderer;
@@ -52,7 +54,7 @@ public class MyCharacterController : MonoBehaviour
     private void FixedUpdate()
     {
         m_WasGrounded = m_IsGrounded;
-        m_IsGrounded = Physics2D.OverlapCircle(_groundCheckPoint.position, 0.1f, _groundLayer);
+        m_IsGrounded = Physics2D.OverlapBox(_groundCheckPoint.position, new Vector2(1.5f, 0.1f), 0f, _groundLayer);
 
         if (!m_WasGrounded && m_IsGrounded)
         {
@@ -66,7 +68,7 @@ public class MyCharacterController : MonoBehaviour
     private void OnDrawGizmos()
     {
         Gizmos.color = Color.red;
-        Gizmos.DrawWireSphere(_groundCheckPoint.position, 0.1f);
+        Gizmos.DrawWireCube(_groundCheckPoint.position, new Vector2(1.5f, 0.1f));
     }
 
 
@@ -90,8 +92,7 @@ public class MyCharacterController : MonoBehaviour
         _characterColorType = newColorType;
         m_DirectionMultiplier = (_characterColorType == CharacterColorType.Blue) ? 1 : -1;
 
-        var targetColor = (_characterColorType == CharacterColorType.Blue) ? Color.blue : Color.red;
-        m_SpriteRenderer.DOColor(targetColor, 0.25f);
+        m_SpriteRenderer.sprite = (_characterColorType == CharacterColorType.Blue) ? _blueSprite : _redSprite;
 
         transform.DOKill();
         transform.localScale = new Vector3(Mathf.Sign(transform.localScale.x), 1f, 1f);

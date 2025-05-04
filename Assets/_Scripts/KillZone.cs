@@ -7,6 +7,9 @@ namespace _Scripts
     {
         public enum KillMode { OnlyBlue, OnlyRed, Both }
         [SerializeField] private KillMode _killMode;
+        [SerializeField] private Color _colorBlue;
+        [SerializeField] private Color _colorRed;
+        [SerializeField] private Color _mixColor;
         
         private SpriteRenderer m_SpriteRenderer;
 
@@ -23,9 +26,9 @@ namespace _Scripts
                 Color visualColor = Color.white;
                 switch (_killMode)
                 {
-                    case KillMode.OnlyBlue: visualColor = Color.red; break;
-                    case KillMode.OnlyRed: visualColor = Color.blue; break;
-                    case KillMode.Both: visualColor = Color.magenta; break;
+                    case KillMode.OnlyBlue: visualColor = _colorRed; break;
+                    case KillMode.OnlyRed: visualColor = _colorBlue; break;
+                    case KillMode.Both: visualColor = _mixColor; break;
                 }
                 m_SpriteRenderer.color = visualColor;
             }
