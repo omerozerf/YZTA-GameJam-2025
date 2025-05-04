@@ -48,7 +48,7 @@ namespace _Scripts
             transitionImage.localScale = Vector3.zero;
             transitionCanvasGroup.blocksRaycasts = true;
 
-            await transitionImage.DOScale(Vector3.one, transitionDuration).SetEase(Ease.InQuad).AsyncWaitForCompletion();
+            await transitionImage.DOScale(Vector3.one * 1.15f, transitionDuration).SetEase(Ease.InQuad).AsyncWaitForCompletion();
 
             await SceneManager.LoadSceneAsync(sceneIndex);
             
@@ -74,6 +74,20 @@ namespace _Scripts
             if (nextIndex < SceneManager.sceneCountInBuildSettings)
             {
                 Instance.PlaySceneTransition(nextIndex).Forget();
+            }
+            else
+            {
+                Debug.Log("No more levels to load.");
+                Instance.PlaySceneTransition(0).Forget();
+            }
+        }
+
+        public static void RestartLevel()
+        {
+            int currentIndex = SceneManager.GetActiveScene().buildIndex;
+            if (currentIndex < SceneManager.sceneCountInBuildSettings)
+            {
+                Instance.PlaySceneTransition(currentIndex).Forget();
             }
             else
             {

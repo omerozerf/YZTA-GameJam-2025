@@ -6,16 +6,18 @@
   <component name="ChangeListManager">
     <list default="true" id="a62e480f-e590-4219-8b0f-8d900129edc7" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.YZTA-GameJam-2025/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.YZTA-GameJam-2025/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Level Manager.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Level Manager.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Character.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Prefabs/Character.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_Scenes/Level 1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scenes/Level 1.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_Scenes/Level 2.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scenes/Level 2.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_Scenes/Level 3.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scenes/Level 3.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_Scenes/Level 4.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scenes/Level 4.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Scenes/Level 5.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scenes/Level 5.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_Scenes/Level 6.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scenes/Level 6.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/KillZone.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/KillZone.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Scenes/Level 7.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scenes/Level 7.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Scenes/Level 8.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scenes/Level 8.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Scenes/_MainMenu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scenes/_MainMenu.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_Scripts/LevelManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/LevelManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/MyCharacterController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/MyCharacterController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,6 +32,9 @@
   &quot;associatedIndex&quot;: 4
 }</component>
   <component name="ProjectId" id="2waQloQl0LijEn5zQqUkuuylxVf" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -101,7 +106,7 @@
       <option name="presentableId" value="Default" />
       <updated>1746277359811</updated>
       <workItem from="1746277362456" duration="10923000" />
-      <workItem from="1746363455814" duration="5659000" />
+      <workItem from="1746363455814" duration="7444000" />
     </task>
     <servers />
   </component>
