@@ -1,11 +1,15 @@
 using UnityEngine;
 using UnityEngine.Serialization;
+using System.Collections.Generic;
 
 
 namespace _Scripts
 {
     public class ColorSwitchZone : MonoBehaviour
     {
+        private Dictionary<MyCharacterController, float> _lastSwitchTimes = new();
+        [SerializeField] private float _switchCooldown = 0.5f;
+
         [SerializeField] private SwitchModeType _modeType = SwitchModeType.Toggle;
         [SerializeField] private Color _colorBlue;
         [SerializeField] private Color _colorRed;
@@ -37,6 +41,10 @@ namespace _Scripts
             var character = other.GetComponent<MyCharacterController>();
             if (character == null) return;
 
+            _lastSwitchTimes.TryAdd(character, -999f);
+
+            if (Time.time - _lastSwitchTimes[character] < _switchCooldown) return;
+
             var newColor = character.GetColorType();
             var currentColor = character.GetColorType();
 
@@ -60,6 +68,7 @@ namespace _Scripts
                 {
                     _audioSource.Play();
                 }
+                _lastSwitchTimes[character] = Time.time;
             }
         }
     }

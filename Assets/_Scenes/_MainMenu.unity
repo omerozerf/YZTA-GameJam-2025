@@ -1018,6 +1018,14 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3444278839459339954, guid: 3f1c706fee79047278d1f2b63e04f872, type: 3}
+      propertyPath: m_fontSize
+      value: 78.24
+      objectReference: {fileID: 0}
+    - target: {fileID: 3444278839459339954, guid: 3f1c706fee79047278d1f2b63e04f872, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 78.24
+      objectReference: {fileID: 0}
     - target: {fileID: 6268162381679182043, guid: 3f1c706fee79047278d1f2b63e04f872, type: 3}
       propertyPath: Loop
       value: 1
@@ -1034,6 +1042,38 @@ PrefabInstance:
       propertyPath: m_audioClip
       value: 
       objectReference: {fileID: 8300000, guid: bed5597db157d4390ad380d04f9d4da2, type: 3}
+    - target: {fileID: 7209186324001551090, guid: 3f1c706fee79047278d1f2b63e04f872, type: 3}
+      propertyPath: m_Pivot.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7209186324001551090, guid: 3f1c706fee79047278d1f2b63e04f872, type: 3}
+      propertyPath: m_Pivot.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7209186324001551090, guid: 3f1c706fee79047278d1f2b63e04f872, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7209186324001551090, guid: 3f1c706fee79047278d1f2b63e04f872, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7209186324001551090, guid: 3f1c706fee79047278d1f2b63e04f872, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7209186324001551090, guid: 3f1c706fee79047278d1f2b63e04f872, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7209186324001551090, guid: 3f1c706fee79047278d1f2b63e04f872, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 371
+      objectReference: {fileID: 0}
+    - target: {fileID: 7209186324001551090, guid: 3f1c706fee79047278d1f2b63e04f872, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -87
+      objectReference: {fileID: 0}
     - target: {fileID: 9023346081650228417, guid: 3f1c706fee79047278d1f2b63e04f872, type: 3}
       propertyPath: m_Name
       value: Level Manager

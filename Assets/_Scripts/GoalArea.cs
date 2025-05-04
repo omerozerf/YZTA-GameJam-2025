@@ -52,8 +52,6 @@ namespace _Scripts
                 CharacterColorType.Red => _colorRed,
                 _ => Color.white
             };
-
-            baseColor.a = 0.5f;
             m_SpriteRenderer.color = baseColor;
         }
         
