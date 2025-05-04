@@ -18,6 +18,8 @@ namespace _Scripts
         [SerializeField] private TMP_Text levelNameText;
         [SerializeField] private Button _playButton;
         [SerializeField] private Button _quitButton;
+        [SerializeField] private AudioSource _audioSource;
+        [SerializeField] private AudioClip _buttonClickSound;
 
         private void Awake()
         {
@@ -31,7 +33,10 @@ namespace _Scripts
             DontDestroyOnLoad(gameObject);
             
             _playButton.onClick.AddListener(LoadNextLevel);
+            _playButton.onClick.AddListener(PlayButtonClickSound);
+            
             _quitButton.onClick.AddListener(Application.Quit);
+            _quitButton.onClick.AddListener(PlayButtonClickSound);
         }
 
         private void Start()
@@ -93,6 +98,14 @@ namespace _Scripts
             {
                 Debug.Log("No more levels to load.");
                 Instance.PlaySceneTransition(0).Forget();
+            }
+        }
+
+        public static void PlayButtonClickSound()
+        {
+            if (Instance._audioSource != null && Instance._buttonClickSound != null)
+            {
+                Instance._audioSource.PlayOneShot(Instance._buttonClickSound);
             }
         }
     }

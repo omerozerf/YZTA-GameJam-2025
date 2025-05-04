@@ -1,3 +1,4 @@
+using _Scripts;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -16,6 +17,7 @@ namespace DefaultNamespace
 
         private void OnQuitButtonClicked()
         {
+            LevelManager.PlayButtonClickSound();
             Application.Quit();
         }
         

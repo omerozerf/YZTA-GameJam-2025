@@ -10,6 +10,7 @@ namespace _Scripts
         [SerializeField] private Color _colorBlue;
         [SerializeField] private Color _colorRed;
         [SerializeField] private Color _mixColor;
+        [SerializeField] private AudioSource _audioSource;
         
         private SpriteRenderer m_SpriteRenderer;
 
@@ -37,6 +38,7 @@ namespace _Scripts
             if (character == null) return;
 
             var newColor = character.GetColorType();
+            var currentColor = character.GetColorType();
 
             switch (_modeType)
             {
@@ -51,7 +53,14 @@ namespace _Scripts
                     break;
             }
 
-            character.ChangeColor(newColor);
+            if (currentColor != newColor)
+            {
+                character.ChangeColor(newColor);
+                if (_audioSource != null)
+                {
+                    _audioSource.Play();
+                }
+            }
         }
     }
 }

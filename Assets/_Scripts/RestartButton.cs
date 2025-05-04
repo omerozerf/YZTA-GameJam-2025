@@ -15,6 +15,7 @@ public class RestartButton : MonoBehaviour
     
     private void OnRestartButtonClicked()
     {
+        LevelManager.PlayButtonClickSound();
         LevelManager.RestartLevel();
     }
     
