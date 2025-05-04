@@ -27,7 +27,6 @@ namespace _Scripts
                     case KillMode.OnlyRed: visualColor = Color.blue; break;
                     case KillMode.Both: visualColor = Color.magenta; break;
                 }
-                visualColor.a = 0.4f;
                 m_SpriteRenderer.color = visualColor;
             }
         }
