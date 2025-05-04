@@ -4,6 +4,7 @@ using UnityEngine.SceneManagement;
 using Cysharp.Threading.Tasks;
 using DG.Tweening;
 using TMPro;
+using UnityEngine.UI;
 
 namespace _Scripts
 {
@@ -15,6 +16,8 @@ namespace _Scripts
         [SerializeField] private RectTransform transitionImage;
         [SerializeField] private float transitionDuration = 0.5f;
         [SerializeField] private TMP_Text levelNameText;
+        [SerializeField] private Button _playButton;
+        [SerializeField] private Button _quitButton;
 
         private void Awake()
         {
@@ -26,6 +29,9 @@ namespace _Scripts
 
             Instance = this;
             DontDestroyOnLoad(gameObject);
+            
+            _playButton.onClick.AddListener(LoadNextLevel);
+            _quitButton.onClick.AddListener(Application.Quit);
         }
 
         private void Start()
@@ -48,6 +54,7 @@ namespace _Scripts
             
             if (levelNameText != null)
             {
+                levelNameText.gameObject.SetActive(true);
                 levelNameText.text = SceneManager.GetActiveScene().name.ToUpperInvariant();
             }
 

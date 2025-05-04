@@ -18,6 +18,8 @@ public class MyCharacterController : MonoBehaviour
     private Rigidbody2D m_Rigidbody;
     private SpriteRenderer m_SpriteRenderer;
     private int m_DirectionMultiplier;
+
+    private BoxCollider2D m_BoxCollider;
     
     private bool m_IsGrounded;
     private bool m_WasGrounded;
@@ -27,6 +29,7 @@ public class MyCharacterController : MonoBehaviour
     {
         m_Rigidbody = GetComponent<Rigidbody2D>();
         m_SpriteRenderer = GetComponent<SpriteRenderer>();
+        m_BoxCollider = GetComponent<BoxCollider2D>();
         
         ChangeColor(_characterColorType);
     }
@@ -44,7 +47,7 @@ public class MyCharacterController : MonoBehaviour
         }
 
 
-        if (!m_IsGrounded && Mathf.Abs(m_Rigidbody.linearVelocity.x) > 0.1f)
+        if (!m_IsGrounded)
         {
             var direction = Mathf.Sign(m_Rigidbody.linearVelocity.x);
             transform.Rotate(Vector3.forward * (-600f * direction * Time.deltaTime));
@@ -54,21 +57,29 @@ public class MyCharacterController : MonoBehaviour
     private void FixedUpdate()
     {
         m_WasGrounded = m_IsGrounded;
-        m_IsGrounded = Physics2D.OverlapBox(_groundCheckPoint.position, new Vector2(1.5f, 0.1f), 0f, _groundLayer);
+        _groundCheckPoint.localRotation = Quaternion.identity;
+        var boxSize = m_BoxCollider.size * 1.25f;
+        m_IsGrounded = Physics2D.OverlapBox(_groundCheckPoint.position, boxSize, 0f, _groundLayer);
 
         if (!m_WasGrounded && m_IsGrounded)
         {
             transform.DOKill();
             transform.localScale = new Vector3(Mathf.Sign(transform.localScale.x), 1f, 1f);
             transform.DOPunchScale(new Vector3(0.2f, -0.1f, 0), 0.2f, 10, 1);
-            transform.rotation = Quaternion.identity;
+            float zRotation = transform.eulerAngles.z;
+            float snappedZ = Mathf.Round(zRotation / 90f) * 90f;
+            transform.rotation = Quaternion.Euler(0, 0, snappedZ);
         }
     }
 
     private void OnDrawGizmos()
     {
-        Gizmos.color = Color.red;
-        Gizmos.DrawWireCube(_groundCheckPoint.position, new Vector2(1.5f, 0.1f));
+        BoxCollider2D col = GetComponent<BoxCollider2D>();
+        if (col != null)
+        {
+            Gizmos.color = Color.red;
+            Gizmos.DrawWireCube(_groundCheckPoint.position, col.size * 1.25f);
+        }
     }
 
 

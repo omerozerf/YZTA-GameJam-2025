@@ -10,6 +10,7 @@ namespace _Scripts
         [SerializeField] private Color _colorBlue;
         [SerializeField] private Color _colorRed;
         [SerializeField] private Color _mixColor;
+        [SerializeField] private bool _canChangeColor = true;
         
         private SpriteRenderer m_SpriteRenderer;
 
@@ -21,6 +22,8 @@ namespace _Scripts
 
         private void Start()
         {
+            if (!_canChangeColor) return;
+            
             if (m_SpriteRenderer != null)
             {
                 Color visualColor = Color.white;
