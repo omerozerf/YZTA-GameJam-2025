@@ -33,7 +33,7 @@ The goal is to strategically control both characters simultaneously, navigate th
 ---
 
 ## 🛠️ **Built With**
-- **Unity (2021.3.5f1)**  
+- **Unity (6000.0.45)**  
 - **C#**  
 - **DOTween**  
 - **Cysharp UniTask**  
