@@ -1,5 +1,6 @@
 using System;
 using UnityEngine;
+using DG.Tweening;
 
 namespace _Scripts
 {
@@ -11,6 +12,8 @@ namespace _Scripts
         [SerializeField] private Color _colorRed;
         [SerializeField] private Color _mixColor;
         [SerializeField] private bool _canChangeColor = true;
+        [SerializeField] private float _cameraShakeDuration = 0.3f;
+        [SerializeField] private float _cameraShakeStrength = 0.3f;
         
         private SpriteRenderer m_SpriteRenderer;
 
@@ -48,6 +51,13 @@ namespace _Scripts
                 (_killMode == KillMode.OnlyRed && charColor == CharacterColorType.Red))
             {
                 character.Die();
+                
+                var cam = Camera.main;
+                if (cam != null)
+                {
+                    Debug.Log(cam, cam.gameObject);
+                    cam.gameObject.transform.DOShakePosition(_cameraShakeDuration, _cameraShakeStrength, vibrato: 20, randomness: 90, fadeOut: true);
+                }
             }
         }
     }

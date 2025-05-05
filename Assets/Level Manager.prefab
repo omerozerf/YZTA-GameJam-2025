@@ -438,8 +438,8 @@ GameObject:
   m_Component:
   - component: {fileID: 2797314348093463045}
   - component: {fileID: 2041239947765521685}
-  - component: {fileID: 1325091066783960965}
   - component: {fileID: 6268162381679182043}
+  - component: {fileID: 1325091066783960965}
   m_Layer: 0
   m_Name: Level Manager
   m_TagString: Untagged
@@ -480,11 +480,9 @@ MonoBehaviour:
   transitionImage: {fileID: 8572233438016267835}
   transitionDuration: 0.5
   levelNameText: {fileID: 3444278839459339954}
-  _playButton: {fileID: 0}
-  _quitButton: {fileID: 0}
   _audioSource: {fileID: 1325091066783960965}
   _buttonClickSound: {fileID: 8300000, guid: 9238ed227459c4131be22f25b7c5dd87, type: 3}
---- !u!82 &1325091066783960965
+--- !u!82 &6268162381679182043
 AudioSource:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -494,9 +492,9 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 0}
-  m_PlayOnAwake: 0
+  m_audioClip: {fileID: 8300000, guid: bed5597db157d4390ad380d04f9d4da2, type: 3}
+  m_Resource: {fileID: 8300000, guid: bed5597db157d4390ad380d04f9d4da2, type: 3}
+  m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -581,7 +579,7 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!82 &6268162381679182043
+--- !u!82 &1325091066783960965
 AudioSource:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -593,7 +591,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 0}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0

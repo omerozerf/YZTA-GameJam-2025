@@ -18,6 +18,7 @@ namespace _Scripts
         [SerializeField] private TMP_Text levelNameText;
         [SerializeField] private AudioSource _audioSource;
         [SerializeField] private AudioClip _buttonClickSound;
+        [SerializeField] private AudioSource _levelTransitionSound;
 
         private void Awake()
         {
@@ -51,8 +52,16 @@ namespace _Scripts
             
             if (levelNameText != null)
             {
-                levelNameText.gameObject.SetActive(true);
-                levelNameText.text = SceneManager.GetActiveScene().name.ToUpperInvariant();
+                if (sceneIndex == 0)
+                {
+                    levelNameText.gameObject.SetActive(false);
+                }
+                else
+                {
+                    levelNameText.gameObject.SetActive(true);
+                    levelNameText.text = SceneManager.GetActiveScene().name.ToUpperInvariant();
+                }
+                
             }
 
             transitionImage.localScale = Vector3.one;
@@ -103,7 +112,7 @@ namespace _Scripts
         
         public static AudioSource GetAudioSource()
         {
-            return Instance._audioSource;
+            return Instance._levelTransitionSound;
         }
     }
 }

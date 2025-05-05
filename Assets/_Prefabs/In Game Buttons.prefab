@@ -523,7 +523,7 @@ GameObject:
   - component: {fileID: 794905684018560215}
   - component: {fileID: 6111672528854243302}
   - component: {fileID: 8793664600937905935}
-  - component: {fileID: 4645188240927721495}
+  - component: {fileID: 2941662796469692767}
   m_Layer: 0
   m_Name: Settings Button
   m_TagString: Untagged
@@ -646,7 +646,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_AspectMode: 2
   m_AspectRatio: 1
---- !u!114 &4645188240927721495
+--- !u!114 &2941662796469692767
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -655,7 +655,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 6780780485018246581}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 277b85bf03ad24ec5be565a515b826cb, type: 3}
+  m_Script: {fileID: 11500000, guid: 887eb5da156ef44a7a0a4e2bcea0f7e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &7986571091457329493
@@ -737,7 +737,6 @@ GameObject:
   - component: {fileID: 3178749725685220857}
   - component: {fileID: 3280355349786068765}
   - component: {fileID: 4924116938994337402}
-  - component: {fileID: 5289852984123299484}
   m_Layer: 0
   m_Name: Levels Button
   m_TagString: Untagged
@@ -860,15 +859,3 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_AspectMode: 2
   m_AspectRatio: 2.0447762
---- !u!114 &5289852984123299484
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8931396880088256175}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 277b85bf03ad24ec5be565a515b826cb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 

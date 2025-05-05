@@ -389,7 +389,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _settingsPanel: {fileID: 66975262}
   _volumeSlider: {fileID: 385722773}
-  _audioSource: {fileID: 1591034808}
+  _audioSource: {fileID: 1591034809}
 --- !u!1 &160434044
 GameObject:
   m_ObjectHideFlags: 0
@@ -1850,7 +1850,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1325091066783960965, guid: 3f1c706fee79047278d1f2b63e04f872, type: 3}
       propertyPath: m_Volume
-      value: 0.22
+      value: 0.63
       objectReference: {fileID: 0}
     - target: {fileID: 1737665312046997219, guid: 3f1c706fee79047278d1f2b63e04f872, type: 3}
       propertyPath: m_Type
@@ -1868,6 +1868,10 @@ PrefabInstance:
       propertyPath: _quitButton
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 2041239947765521685, guid: 3f1c706fee79047278d1f2b63e04f872, type: 3}
+      propertyPath: _levelTransitionSound
+      value: 
+      objectReference: {fileID: 1591034809}
     - target: {fileID: 2797314348093463045, guid: 3f1c706fee79047278d1f2b63e04f872, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -1926,12 +1930,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6268162381679182043, guid: 3f1c706fee79047278d1f2b63e04f872, type: 3}
       propertyPath: m_Volume
-      value: 0.52
+      value: 0.01
       objectReference: {fileID: 0}
-    - target: {fileID: 6268162381679182043, guid: 3f1c706fee79047278d1f2b63e04f872, type: 3}
-      propertyPath: m_Resource
-      value: 
-      objectReference: {fileID: 8300000, guid: bed5597db157d4390ad380d04f9d4da2, type: 3}
     - target: {fileID: 6268162381679182043, guid: 3f1c706fee79047278d1f2b63e04f872, type: 3}
       propertyPath: m_audioClip
       value: 
@@ -1977,9 +1977,9 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3f1c706fee79047278d1f2b63e04f872, type: 3}
---- !u!82 &1591034808 stripped
+--- !u!82 &1591034809 stripped
 AudioSource:
-  m_CorrespondingSourceObject: {fileID: 1325091066783960965, guid: 3f1c706fee79047278d1f2b63e04f872, type: 3}
+  m_CorrespondingSourceObject: {fileID: 6268162381679182043, guid: 3f1c706fee79047278d1f2b63e04f872, type: 3}
   m_PrefabInstance: {fileID: 1591034807}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1634783160
