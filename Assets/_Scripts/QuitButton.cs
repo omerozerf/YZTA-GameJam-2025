@@ -1,4 +1,5 @@
 using _Scripts;
+using Cysharp.Threading.Tasks;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -18,7 +19,7 @@ namespace DefaultNamespace
         private void OnQuitButtonClicked()
         {
             LevelManager.PlayButtonClickSound();
-            Application.Quit();
+            LevelManager.Instance.PlaySceneTransition(0).Forget();
         }
         
         private void OnDestroy()

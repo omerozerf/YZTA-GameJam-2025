@@ -16,8 +16,6 @@ namespace _Scripts
         [SerializeField] private RectTransform transitionImage;
         [SerializeField] private float transitionDuration = 0.5f;
         [SerializeField] private TMP_Text levelNameText;
-        [SerializeField] private Button _playButton;
-        [SerializeField] private Button _quitButton;
         [SerializeField] private AudioSource _audioSource;
         [SerializeField] private AudioClip _buttonClickSound;
 
@@ -31,12 +29,6 @@ namespace _Scripts
 
             Instance = this;
             DontDestroyOnLoad(gameObject);
-            
-            _playButton.onClick.AddListener(LoadNextLevel);
-            _playButton.onClick.AddListener(PlayButtonClickSound);
-            
-            _quitButton.onClick.AddListener(Application.Quit);
-            _quitButton.onClick.AddListener(PlayButtonClickSound);
         }
 
         private void Start()
@@ -47,7 +39,7 @@ namespace _Scripts
             }
         }
 
-        private async UniTask PlaySceneTransition(int sceneIndex)
+        public async UniTask PlaySceneTransition(int sceneIndex)
         {
             transitionCanvasGroup.alpha = 1;
             transitionImage.localScale = Vector3.zero;
@@ -107,6 +99,11 @@ namespace _Scripts
             {
                 Instance._audioSource.PlayOneShot(Instance._buttonClickSound);
             }
+        }
+        
+        public static AudioSource GetAudioSource()
+        {
+            return Instance._audioSource;
         }
     }
 }
