@@ -4,7 +4,35 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a62e480f-e590-4219-8b0f-8d900129edc7" name="Changes" comment="" />
+    <list default="true" id="a62e480f-e590-4219-8b0f-8d900129edc7" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/_Scripts/LevelButton.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_Scripts/LevelButton.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_Scripts/LevelPanel.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_Scripts/LevelPanel.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_Scripts/MyLevelButton.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_Scripts/MyLevelButton.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.YZTA-GameJam-2025/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.YZTA-GameJam-2025/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Character.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Prefabs/Character.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/In Game Buttons.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Prefabs/In Game Buttons.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Scenes/Level 1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scenes/Level 1.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Scenes/Level 10.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scenes/Level 10.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Scenes/Level 11.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scenes/Level 11.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Scenes/Level 12.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scenes/Level 12.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Scenes/Level 13.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scenes/Level 13.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Scenes/Level 14.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scenes/Level 14.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Scenes/Level 2.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scenes/Level 2.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Scenes/Level 3.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scenes/Level 3.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Scenes/Level 4.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scenes/Level 4.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Scenes/Level 5.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scenes/Level 5.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Scenes/Level 6.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scenes/Level 6.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Scenes/Level 7.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scenes/Level 7.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Scenes/Level 8.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scenes/Level 8.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Scenes/Level 9.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scenes/Level 9.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Scenes/__MainMenu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scenes/__MainMenu.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/LevelManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/LevelManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/MyCharacterController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/MyCharacterController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/SettingsPanel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/SettingsPanel.cs" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -94,6 +122,7 @@
       <workItem from="1746277362456" duration="10923000" />
       <workItem from="1746363455814" duration="12495000" />
       <workItem from="1746441063060" duration="7437000" />
+      <workItem from="1746454060425" duration="3503000" />
     </task>
     <servers />
   </component>

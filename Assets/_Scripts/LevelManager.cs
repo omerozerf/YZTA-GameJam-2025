@@ -18,6 +18,7 @@ namespace _Scripts
         [SerializeField] private TMP_Text levelNameText;
         [SerializeField] private AudioSource _audioSource;
         [SerializeField] private AudioClip _buttonClickSound;
+        [SerializeField] private AudioClip _levelUpSound;
         [SerializeField] private AudioSource _levelTransitionSound;
 
         private void Awake()
@@ -45,8 +46,9 @@ namespace _Scripts
             transitionCanvasGroup.alpha = 1;
             transitionImage.localScale = Vector3.zero;
             transitionCanvasGroup.blocksRaycasts = true;
-
+            
             await transitionImage.DOScale(Vector3.one * 1.15f, transitionDuration).SetEase(Ease.InQuad).AsyncWaitForCompletion();
+            Instance._audioSource.PlayOneShot(Instance._levelUpSound);
 
             await SceneManager.LoadSceneAsync(sceneIndex);
             

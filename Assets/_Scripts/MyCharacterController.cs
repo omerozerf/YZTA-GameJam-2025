@@ -14,6 +14,9 @@ public class MyCharacterController : MonoBehaviour
     [SerializeField] private Transform _spawnPoint;
     [SerializeField] private Sprite _blueSprite;
     [SerializeField] private Sprite _redSprite;
+    [SerializeField] private AudioClip _jumpSound;
+    [SerializeField] private AudioClip _dieSound;
+    [SerializeField] private AudioSource _audioSource;
     
     private Rigidbody2D m_Rigidbody;
     private SpriteRenderer m_SpriteRenderer;
@@ -116,6 +119,7 @@ public class MyCharacterController : MonoBehaviour
         {
             m_Rigidbody.AddForce(Vector2.up * _jumpForce, ForceMode2D.Impulse);
             transform.DOScaleY(1.2f, 0.1f).SetLoops(2, LoopType.Yoyo);
+            if (_jumpSound) _audioSource.PlayOneShot(_jumpSound);
         }
     }
 
@@ -128,5 +132,7 @@ public class MyCharacterController : MonoBehaviour
     {
         m_Rigidbody.linearVelocity = Vector2.zero;
         transform.position = _spawnPoint.position;
+        
+        _audioSource.PlayOneShot(_dieSound);
     }
 }

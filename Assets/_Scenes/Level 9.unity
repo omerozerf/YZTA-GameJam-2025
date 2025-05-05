@@ -996,6 +996,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 8140471288307944762, guid: fae0b69f1e4124fca953025626f16c5a, type: 3}
+      propertyPath: _jumpSound
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 8140471288307944762, guid: fae0b69f1e4124fca953025626f16c5a, type: 3}
       propertyPath: _characterColorType
       value: 1
       objectReference: {fileID: 0}

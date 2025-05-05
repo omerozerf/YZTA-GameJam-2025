@@ -20,6 +20,14 @@ namespace _Scripts
             DontDestroyOnLoad(this);
         }
         
+        private void Update()
+        {
+            if (Input.GetKeyDown(KeyCode.Escape))
+            {
+                Hide();
+            }
+        }
+        
         public static void Show()
         {
             if (ms_Instance == null) return;
