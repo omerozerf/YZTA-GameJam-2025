@@ -4,7 +4,7 @@ This game was created by **Group 6**, consisting of five passionate developers c
 
 ---
 
-## 🧑‍💻 **Team Members**
+## 🧑‍💻 **Team Members** 
 - **Ömer Faruk Özer**  
 - **Nazar Güner**  
 - **Funda Ayas**  
