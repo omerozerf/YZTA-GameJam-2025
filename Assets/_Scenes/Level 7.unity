@@ -301,6 +301,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6544839853976513678, guid: 9b0a7dfaec27046f08939a86d192c5a3, type: 3}
+      propertyPath: _killMode
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 6971612016033632537, guid: 9b0a7dfaec27046f08939a86d192c5a3, type: 3}
       propertyPath: m_Name
       value: Danger Obstacle (2)
@@ -670,6 +674,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6544839853976513678, guid: 9b0a7dfaec27046f08939a86d192c5a3, type: 3}
+      propertyPath: _killMode
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 6971612016033632537, guid: 9b0a7dfaec27046f08939a86d192c5a3, type: 3}
       propertyPath: m_Name
       value: Danger Obstacle (11)
@@ -861,6 +869,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6544839853976513678, guid: 9b0a7dfaec27046f08939a86d192c5a3, type: 3}
+      propertyPath: _killMode
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 6971612016033632537, guid: 9b0a7dfaec27046f08939a86d192c5a3, type: 3}
       propertyPath: m_Name
       value: Danger Obstacle (5)
@@ -917,6 +929,10 @@ PrefabInstance:
     - target: {fileID: 4382999448520648274, guid: 9b0a7dfaec27046f08939a86d192c5a3, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6544839853976513678, guid: 9b0a7dfaec27046f08939a86d192c5a3, type: 3}
+      propertyPath: _killMode
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6971612016033632537, guid: 9b0a7dfaec27046f08939a86d192c5a3, type: 3}
       propertyPath: m_Name
@@ -1246,6 +1262,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6544839853976513678, guid: 9b0a7dfaec27046f08939a86d192c5a3, type: 3}
+      propertyPath: _killMode
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 6971612016033632537, guid: 9b0a7dfaec27046f08939a86d192c5a3, type: 3}
       propertyPath: m_Name
       value: Danger Obstacle (9)
@@ -1280,7 +1300,7 @@ Transform:
   m_GameObject: {fileID: 569508447}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -19.81, y: -8.69, z: 0}
+  m_LocalPosition: {x: -23.71, y: -8.69, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1770,6 +1790,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6544839853976513678, guid: 9b0a7dfaec27046f08939a86d192c5a3, type: 3}
+      propertyPath: _killMode
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 6971612016033632537, guid: 9b0a7dfaec27046f08939a86d192c5a3, type: 3}
       propertyPath: m_Name
       value: Danger Obstacle (8)
@@ -2026,6 +2050,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6544839853976513678, guid: 9b0a7dfaec27046f08939a86d192c5a3, type: 3}
+      propertyPath: _killMode
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 6971612016033632537, guid: 9b0a7dfaec27046f08939a86d192c5a3, type: 3}
       propertyPath: m_Name
       value: Danger Obstacle (7)
@@ -2083,6 +2111,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6544839853976513678, guid: 9b0a7dfaec27046f08939a86d192c5a3, type: 3}
+      propertyPath: _killMode
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 6971612016033632537, guid: 9b0a7dfaec27046f08939a86d192c5a3, type: 3}
       propertyPath: m_Name
       value: Danger Obstacle (4)
@@ -2139,6 +2171,10 @@ PrefabInstance:
     - target: {fileID: 4382999448520648274, guid: 9b0a7dfaec27046f08939a86d192c5a3, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6544839853976513678, guid: 9b0a7dfaec27046f08939a86d192c5a3, type: 3}
+      propertyPath: _killMode
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6971612016033632537, guid: 9b0a7dfaec27046f08939a86d192c5a3, type: 3}
       propertyPath: m_Name
@@ -2340,7 +2376,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1559036608782692864, guid: bf91138a5456047de81379db48a0c823, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: -248.18002
       objectReference: {fileID: 0}
     - target: {fileID: 4072298396655406002, guid: bf91138a5456047de81379db48a0c823, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2396,7 +2432,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4555166010828492206, guid: bf91138a5456047de81379db48a0c823, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: -536.07
       objectReference: {fileID: 0}
     - target: {fileID: 4674686324114455688, guid: bf91138a5456047de81379db48a0c823, type: 3}
       propertyPath: m_AnchorMax.y
@@ -2412,7 +2448,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4674686324114455688, guid: bf91138a5456047de81379db48a0c823, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 195.29996
       objectReference: {fileID: 0}
     - target: {fileID: 6279083960011745368, guid: bf91138a5456047de81379db48a0c823, type: 3}
       propertyPath: m_AnchorMax.y
@@ -2428,7 +2464,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6279083960011745368, guid: bf91138a5456047de81379db48a0c823, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 39.70996
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2616,6 +2652,10 @@ PrefabInstance:
     - target: {fileID: 4382999448520648274, guid: 9b0a7dfaec27046f08939a86d192c5a3, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6544839853976513678, guid: 9b0a7dfaec27046f08939a86d192c5a3, type: 3}
+      propertyPath: _killMode
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6971612016033632537, guid: 9b0a7dfaec27046f08939a86d192c5a3, type: 3}
       propertyPath: m_Name
@@ -2919,7 +2959,7 @@ Transform:
   m_GameObject: {fileID: 1734005894}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 20, y: -8.69, z: 0}
+  m_LocalPosition: {x: 23.55, y: -8.69, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3137,6 +3177,10 @@ PrefabInstance:
     - target: {fileID: 4382999448520648274, guid: 9b0a7dfaec27046f08939a86d192c5a3, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6544839853976513678, guid: 9b0a7dfaec27046f08939a86d192c5a3, type: 3}
+      propertyPath: _killMode
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6971612016033632537, guid: 9b0a7dfaec27046f08939a86d192c5a3, type: 3}
       propertyPath: m_Name
@@ -3550,6 +3594,10 @@ PrefabInstance:
     - target: {fileID: 4382999448520648274, guid: 9b0a7dfaec27046f08939a86d192c5a3, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6544839853976513678, guid: 9b0a7dfaec27046f08939a86d192c5a3, type: 3}
+      propertyPath: _killMode
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6971612016033632537, guid: 9b0a7dfaec27046f08939a86d192c5a3, type: 3}
       propertyPath: m_Name
