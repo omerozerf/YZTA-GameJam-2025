@@ -2,6 +2,8 @@
 Welcome to **Mirrorverse**, a unique side-scroller puzzle game developed during the **AI & Technology Academy GameJam 2025**.  
 This game was created by **Group 6**, consisting of five passionate developers collaborating under pressure and creativity.
 
+![Gameplay](./demoplay.gif)
+
 ---
 
 ## 🧑‍💻 **Team Members** 
