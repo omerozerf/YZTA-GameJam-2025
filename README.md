@@ -60,7 +60,7 @@ The goal is to strategically control both characters simultaneously, navigate th
 ---
 
 ## 🚀 **To Play in Unity**
-1. Open `Assets/_Scenes/Level_01`  
+1. Open `Assets/_Scenes/__MainMenu`  
 2. Hit **Play** in Unity Editor  
 3. Control both characters with keyboard input  
 4. Solve puzzles through coordinated mirrored control  
