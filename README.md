@@ -1,3 +1,13 @@
+## 🏆 **Achievements**
+
+🥇 We proudly secured **1st place** in the **AI & Technology Academy GameJam 2025** among dozens of creative game projects!
+
+📜 You can view our **official certificate** of achievement here:  
+👉 [`Certificate.pdf`](./YZTA-GameJam-2025/Certificate.pdf)
+
+📢 Our winning announcement was featured **live by the jury**, and shared on LinkedIn:  
+🔗 [Ömer Faruk Özer's LinkedIn Post with Jury Video](https://www.linkedin.com/posts/omerozerf_mirrorverse-activity-7329817323849039876-iH8k?utm_source=share&utm_medium=member_desktop&rcm=ACoAADdIptUB0iWK15w2DbroQ1yBB7M83oBzDz4)
+
 # 🎮 **Mirrorverse - GameJam 2025 Submission**  
 Welcome to **Mirrorverse**, a unique side-scroller puzzle game developed during the **AI & Technology Academy GameJam 2025**.  
 This game was created by **Group 6**, consisting of five passionate developers collaborating under pressure and creativity.
